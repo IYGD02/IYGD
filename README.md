@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="91">
 	<defs>
 		<linearGradient id="gradient_0" gradientUnits="userSpaceOnUse" x1="944.63605" y1="111.71267" x2="176.1111" y2="896.18909">
