@@ -1,3 +1,4 @@
+<style>
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
@@ -147,3 +148,4 @@ h1 {
 .menu-circular:hover .menu {
   display: block;
 }
+</style>
