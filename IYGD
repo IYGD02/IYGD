@@ -1,284 +1,118 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Futurista</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUCIOS</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Proyectos</a></li>
-        <li><a href="#">Sobre mí</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="hero">
-      <h1>Bienvenido al futuro</h1>
-      <p>Explora mi universo de innovación y tecnología</p>
-      <button>Descubre más</button>
-    </section>
-    <section class="proyectos">
-      <h2>Proyectos recientes</h2>
-      <ul>
-        <li>
-          <img src="img/proyecto1.jpg" alt="Proyecto 1">
-          <h3>Proyecto 1</h3>
-          <p>Descripción del proyecto 1</p>
-        </li>
-        <li>
-          <img src="img/proyecto2.jpg" alt="Proyecto 2">
-          <h3>Proyecto 2</h3>
-          <p>Descripción del proyecto 2</p>
-        </li>
-      </ul>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2023 Futurista</p>
-  </footer>
-  <script src="script.js"></script>
-<style>
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-}
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#hombres">Hombres</a></li>
+                <li><a href="#mujeres">Mujeres</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+      
+<section class="portada">
 
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 1em;
-  text-align: center;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-nav li {
-  margin-right: 20px;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.hero {
-  background-image: linear-gradient(to bottom, #333, #555);
-  background-size: 100% 300px;
-  background-position: 0% 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-}
-
-.hero h1 {
-  font-size: 48px;
-}
-
-.proyectos {
-  padding: 2em;
-}
-
-.proyectos ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.proyectos li {
-  margin-bottom: 20px;
-}
-
-.proyectos img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 1em;
-  text-align: center;
-}
-</style>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const links = document.querySelectorAll("a");
-  links.forEach((link) => {
-    link.addEventListener("mouseover", () => {
-      link.style.transition = "all 0.3s ease";
-      link.style.transform = "scale(1.1)";
-    });
-    link.addEventListener("mouseout", () => {
-      link.style.transform = "scale(1)";
-    });
-  });
-});
-<style>
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-}
-
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 1em;
-  text-align: center;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-nav li {
-  margin-right: 20px;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.hero {
-  background-image: linear-gradient(to bottom, #333, #555);
-  background-size: 100% 300px;
-  background-position: 0% 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-}
-
-.hero h1 {
-  font-size: 48px;
-}
-
-.proyectos {
-  padding: 2em;
-}
-
-.proyectos ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.proyectos li {
-  margin-bottom: 20px;
-}
-
-.proyectos img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 1em;
-  text-align: center;
-}
-
-
-body {
-  background-color: #000; /* Color negro */
-}
-body {
-  color: #fff; /* Color blanco */
-}
-
-h1 {
-  opacity: 0; 
-  animation: aparece 10s forwards; 
-}
-
-@keyframes aparece {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-
-.menu-circular {
-  position: fixed;
-  top: 10;
-  left: 10;
-  background-color: #808080;
-  border-radius: 500%;
-  padding: 10;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.boton-menu {
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.boton-menu span {
-  width: 10;
-  height: 2;
-  background-color: #fff;
-  margin: 2 auto;
-  border-radius: 10;
-}
-
-.menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: none;
-  position: absolute;
-  top: 50;
-  left: 10;
-  background-color: #808080;
-  border-radius: 10px;
-  padding: 10;
-}
-
-.menu li {
-  margin-bottom: 10px;
-}
-
-.menu a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.menu a:hover {
-  color: #ccc;
-}
-
-.menu-circular:hover .menu {
-  display: block;
-}
-</style>
-</script>
+      <h1> SUC.I.OS </h1>    
+ </section> 
+    <main>
+        <section id="hombres">
+            <h2>Ropa para Hombres</h2>
+            <div class="producto">
+                <img src="img/camisa-hombre.jpg" alt="Camisa Hombre">
+                <h3>Camisa Hombre</h3>
+                <p>Precio: $50.00</p>
+                <button>Comprar</button>
+            </div>
+            
+            <div class="producto">
+                <img src="img/pantalones-hombre.jpg" alt="Pantalones Hombre">
+                <h3>Pantalones Hombre</h3>
+                <p>Precio: $40.00</p>
+                <button>Comprar</button>
+            </div>
+            
+        </section>
+        <section id="mujeres">
+            <h2>Ropa para Mujeres</h2>
+            <div class="producto">
+                <img src="img/vestido-mujer.jpg" alt="Vestido Mujer">
+                <h3>Vestido Mujer</h3>
+                <p>Precio: $60.00</p>
+                <button>Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="img/falda-mujer.jpg" alt="Falda Mujer">
+                <h3>Falda Mujer</h3>
+                <p>Precio: $30.00</p>
+                <button>Comprar</button>
+            </div>
+        </section>
+        </section>
+        <section id="contacto">
+            <h2>Información de Contacto</h2>
+            <p>Correo electrónico: info@catalogo.com</p>
+            <p>Teléfono: 555-555-5555</p>
+            <p>Dirección: Calle 123, Ciudad, País</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;   copyright</p>
+    </footer>
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Partículas</title>
+	<style>
+		/* Estilos para el cuerpo de la página */
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #000;
+		}
+		
+		/* Estilos para las partículas */
+		.particle {
+			position: fixed;
+			width: 2px;
+			height: 2px;
+			background-color: #fff;
+			border-radius: 50%;
+			animation: move 10s infinite linear;
+			z-index: -1;
+		}
+		
+		@keyframes move {
+			0% {
+				transform: translate(0, 0);
+			}
+			100% {
+				transform: translate(calc(100vw + 100%), calc(100vh + 100%));
+			}
+		}
+	</style>
+</head>
+<body>
+	<!-- Contenido de la página -->
+	<h1>Contenido de la página</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	
+	<!-- Generamos las partículas con JavaScript -->
+	<script>
+		for (let i = 0; i < 100; i++) {
+			const particle = document.createElement('div');
+			particle.classList.add('particle');
+			particle.style.top = `${Math.random() * 100}%`;
+			particle.style.left = `${Math.random() * 100}%`;
+			particle.style.animationDelay = `${Math.random() * 10}s`;
+			document.body.appendChild(particle);
+		}
+	</script>
 </body>
 </html>
