@@ -140,7 +140,4 @@
 	<title>Contenedores con menús desplegables</title>
 	<link rel="stylesheet" href="estilos.css">
 </head>
-
-</html>
 </body>
-</html>
