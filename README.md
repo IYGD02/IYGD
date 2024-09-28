@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -15,66 +16,74 @@
             </ul>
         </nav>
     </header>
-      <style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #000;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    border: 1px solid #fff ;
-    border-radius: 10px;
-}
-</style>
+      
 <section class="portada">
 
       <h1> SUC.I.OS </h1>    
  </section> 
     <main>
-        <section id="hombres">
-            <h2>Ropa para Hombres</h2>
-            <div class="producto">
-                <img src="img/camisa-hombre.jpg" alt="Camisa Hombre">
-                <h3>Camisa Hombre</h3>
-                <p>Precio: $50.00</p>
-                <button>Comprar</button>
-            </div>
-            
-            <div class="producto">
-                <img src="img/pantalones-hombre.jpg" alt="Pantalones Hombre">
-                <h3>Pantalones Hombre</h3>
-                <p>Precio: $40.00</p>
-                <button>Comprar</button>
-            </div>
-            
-        </section>
-        <section id="mujeres">
-            <h2>Ropa para Mujeres</h2>
-            <div class="producto">
-                <img src="img/vestido-mujer.jpg" alt="Vestido Mujer">
-                <h3>Vestido Mujer</h3>
-                <p>Precio: $60.00</p>
-                <button>Comprar</button>
-            </div>
-            <div class="producto">
-                <img src="img/falda-mujer.jpg" alt="Falda Mujer">
-                <h3>Falda Mujer</h3>
-                <p>Precio: $30.00</p>
-                <button>Comprar</button>
-            </div>
-        </section>
-        </section>
-        <section id="contacto">
-            <h2>Información de Contacto</h2>
-            <p>Correo electrónico: info@catalogo.com</p>
-            <p>Teléfono: 555-555-5555</p>
-            <p>Dirección: Calle 123, Ciudad, País</p>
-        </section>
+    <div class="contenedor">
+  <div class="rectangulo">
+    <img src="https://images.app.goo.gl/nak2E9m4x6FRqvyRA" alt="Imagen 1">
+  </div>
+  <div class="rectangulo">
+    <img src="imagen2.jpg" alt="Imagen 2">
+  </div>
+  <div class="rectangulo">
+    <img src="imagen3.jpg" alt="Imagen 3">
+  </div>
+  <div class="rectangulo">
+    <img src="imagen3.jpg" alt="Imagen 4">
+  </div>
+  <div class="rectangulo">
+    <img src="imagen3.jpg" alt="Imagen 5">
+  </div>
+  <div class="rectangulo">
+    <img src="imagen3.jpg" alt="Imagen 6">
+  </div>
+  <div class="rectangulo">
+    <img src="imagen3.jpg" alt="Imagen 7">
+  </div>
+  <div class="rectangulo">
+    <img src="imagen3.jpg" alt="Imagen 8">
+  </div>
+  <div class="rectangulo">
+    <img src="imagen3.jpg" alt="Imagen 9">
+  </div>
+  <div class="rectangulo">
+    <img src="imagen3.jpg" alt="Imagen 10">
+  </div>
+  <div class="rectangulo">
+    <img src="imagen3.jpg" alt="Imagen 11">
+  </div>
+  <div class="rectangulo">
+    <img src="imagen3.jpg" alt="Imagen 12">
+  </div>
+  <div class="rectangulo">
+    <img src="imagen3.jpg" alt="Imagen 13">
+  </div>
+  <div class="rectangulo">
+    <img src="imagen3.jpg" alt="Imagen 14">
+  </div>
+  <div class="rectangulo">
+    <img src="imagen3.jpg" alt="Imagen 15">
+  </div>
+  <div class="rectangulo">
+    <img src="imagen3.jpg" alt="Imagen 16">
+  </div>
+  <div class="rectangulo">
+    <img src="imagen3.jpg" alt="Imagen 17">
+  </div>
+  <div class="rectangulo">
+    <img src="imagen3.jpg" alt="Imagen 18">
+  </div>
+  <div class="rectangulo">
+    <img src="imagen3.jpg" alt="Imagen 19">
+  </div>
+  <div class="rectangulo">
+    <img src="imagen20.jpg" alt="Imagen 20">
+  </div>
+</div> 
     </main>
     <footer>
         <p>&copy;   copyright</p>
@@ -113,9 +122,6 @@ header {
 	</style>
 </head>
 <body>
-	<!-- Contenido de la página -->
-	<h1>Contenido de la página</h1>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 	
 	<!-- Generamos las partículas con JavaScript -->
 	<script>
@@ -128,5 +134,13 @@ header {
 			document.body.appendChild(particle);
 		}
 	</script>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contenedores con menús desplegables</title>
+	<link rel="stylesheet" href="estilos.css">
+</head>
+
+</html>
 </body>
 </html>
