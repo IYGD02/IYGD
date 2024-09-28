@@ -252,7 +252,7 @@ h1 {
   }
 }
 .contenedor {
-  width: 100%;
+  width: 500%;
   height: 50vh;
   overflow-x: auto;
   overflow-y: hidden;
