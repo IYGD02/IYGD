@@ -27,7 +27,7 @@
     <img src="https://images.app.goo.gl/nak2E9m4x6FRqvyRA" alt="Imagen 1">
   </div>
   <div class="rectangulo">
-    <img src="imagen2.jpg" alt="Imagen 2">
+    <img src="https://images.app.goo.gl/BkyLnQxeFxyA1EtCA.jpg" alt="Imagen 2">
   </div>
   <div class="rectangulo">
     <img src="imagen3.jpg" alt="Imagen 3">
