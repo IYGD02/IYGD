@@ -1,7 +1,5 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
-     <link rel=“stylesheet” href=“css”
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUCIOS</title>
@@ -17,7 +15,22 @@
             </ul>
         </nav>
     </header>
-      
+      <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #fff ;
+    border-radius: 10px;
+}
+</style>
 <section class="portada">
 
       <h1> SUC.I.OS </h1>    
