@@ -139,5 +139,168 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Contenedores con menús desplegables</title>
 	<link rel="stylesheet" href="estilos.css">
+        <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #fff ;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 5;
+}
+
+.portada {
+  background-color: black;
+  height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: #fff;
+ 
+}
+
+.portada h1 {
+ font-size: 50;
+}
+
+.portada p {
+ font-size: 163;
+}
+
+h1 {
+  opacity: 0; 
+  animation: aparece 10s forwards; 
+}
+
+@keyframes aparece {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fondo-puntos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:  100%;
+  height: 500vh;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.fondo-puntos::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(#fff, #fff, #fff);
+  background-size: 100px 100px;
+  animation: mover 10s linear infinite;
+}
+
+@keyframes mover {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(100px, 100px);
+  }
+}
+.contenedor {
+  width: 100%;
+  height: 50vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+}
+
+.rectangulo {
+  width: 500;
+  height: 400;
+  margin-right: ;
+  border: 1px solid #ddd;
+  display: inline-block;
+  opacity: 1; /* Inicialmente visible */
+  transition: opacity 0.5s; /* Transición para aparecer/desaparecer */
+}
+
+.rectangulo.visible {
+  opacity: 1; /* Visible */
+}
+</style>
+<script>
+let menu = document.getElementById('menu');
+let titulo = document.querySelector('.titulo');
+const contenedor = document.querySelector('.contenedor');
+const rectangulos = document.querySelectorAll('.rectangulo');
+
+contenedor.addEventListener('scroll', () => {
+  const scrollLeft = contenedor.scrollLeft;
+  const scrollWidth = contenedor.scrollWidth;
+  const clientWidth = contenedor.clientWidth;
+
+  // Aparecer al deslizar
+  if (scrollLeft > 0) {
+    rectangulos.forEach((rectangulo) => {
+      rectangulo.classList.add('visible');
+    });
+  }
+
+  // Desaparecer al regresar a la posición original
+  if (scrollLeft === 0) {
+    rectangulos.forEach((rectangulo) => {
+      rectangulo.classList.remove('visible');
+    });
+  }
+});
+
+</script>
 </head>
 </body>
