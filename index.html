@@ -1,0 +1,461 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <main>
+    
+      <h1>MAR-CHESE</h1>
+
+      <ul class="ul">
+        <li class="li">
+          <button class="button" onclick="redirigir('file:///C:/Users/ianyo/AppData/Local/Temp/AweZip/Temp2/AweZip4/b50a6152f93c5fcc992990edb9b84bf5-f467030f1ddd01dc281cd85f968e52202685a8ad/style.html')">
+            <p class="p">Menu</p>
+          </button>
+        </li>
+        <li class="li">
+          <button class="button" onclick="redirigir('https://maps.apple.com/?ll=31.680027,-106.363357&q=Ubicaci%C3%B3n%20marcada&t=m')">
+            <p class="p">Ubicacion</p>
+          </button>
+        </li>
+        <li class="li">
+          <button class="button" onclick="redirigir('https://wa.link/l0ohnv')">
+            <p class="p">Contacto</p>
+          </button>
+        </li>
+      </ul>
+
+      <!-- AquÃ­ se encuentra el resto de tu cÃ³digo, como el de las bebidas -->
+    </main>
+
+    <script>
+      // FunciÃ³n para redirigir a las URLs correspondientes
+      function redirigir(url) {
+        window.location.href = url;
+      }
+    </script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Montserrat", sans-serif;
+        padding: 5rem;
+        color: #000;
+        background-color: #fff;
+      }
+
+      main {
+        max-width: 100rem;
+        margin: auto;
+      }
+
+      .ul {
+        width: fit-content;
+        background-color: transparent;
+        list-style: none;
+      }
+
+      .li {
+        margin-bottom: 0px;
+      }
+
+      .button {
+        background-color: transparent;
+        font-family: sans-serif;
+        color: #000;
+        border: none;
+        font-size: 22px;
+        font-weight: 700;
+        padding: 10px 30px;
+        cursor: pointer;
+        position: relative;
+        padding-left: 11px;
+        transition: 0.1s;
+      }
+
+      .p {
+        position: relative;
+      }
+
+      .button:hover {
+        color: #fff;
+        text-align: center;
+      }
+
+      .button:hover::before {
+        transform: rotate(0deg);
+        width: 100%;
+        height: 40;
+        top: 10;
+        border-radius: 3px;
+        background-color: #000;
+      }
+
+      .button::before {
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        background-color: black;
+        left: -10px;
+        top: 19px;
+        cursor: pointer;
+        transform: rotate(225deg);
+        transition: 0.3s;
+        z-index: -1;
+      }
+
+      .button:active::before {
+        background-color: #fff;
+      }
+
+      h1 {
+        text-align: center;
+        opacity: 0;
+        animation: aparece 10s forwards;
+      }
+
+      @keyframes aparece {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </body>
+</html>
+
+
+		
+	<div class="drinks__tags tag-selection" style="margin-top: 2rem;">
+		<p class="drinks_tag drinks_tag--red tag-inactive">LITRO</p>
+		<p class="drinks_tag drinks_tag--pink tag-inactive">SUPER</p>
+		<p class="drinks_tag drinks_tag--orange">GRANDE</p>
+</div>
+	<div class="drinks">
+            <div class="drinks__item">
+                <img src="https://www.facebook.com/share/p/YJUYipdMQsfwfYHU/?mibextid=WC7FNe" alt="Drink">
+                <div>
+                    <h3>GRANDE</h3>
+                    <p>Para aquellos que buscan una experiencia más íntima, nuestro Coctel Grande es la opción perfecta. Con 16 onzas de nuestra mezcla artesanal, este coctel es ideal para una cita o reunión con amigos. Precio: $100.</p>
+                </div>
+                <div class="drinks__tags">
+                    
+                <p class="drinks_tag drinks_tag--grey">$100</p>
+            
+                <p class="drinks_tag drinks_tag--grey">GRANDE</p>
+            
+                </div>
+            </div>
+        </div>
+</main>
+<style>
+  *,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+	font-family: "Montserrat", "sans-serif";
+}
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+body {
+	box-sizing: border-box;
+	font-size: 1.6rem;
+	padding: 5rem;
+}
+main {
+	max-width: 100rem;
+	margin: auto;
+}
+
+.drinks {
+	margin-top: 2rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+	row-gap: 4rem;
+	column-gap: 2rem;
+	color: #555;
+}
+.drinks__item {
+	width: 100%;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	row-gap: 2rem;
+	padding: 2rem;
+	/* box-shadow: 0 0 1rem rgba(0,0,0,.2); */
+	border-bottom: 2px solid #eee;
+	border-radius: 0.5rem;
+}
+.drinks__item img {
+	width: 100%;
+	height: 30rem;
+	object-fit: cover;
+}
+.drinks__item h3 {
+	text-transform: uppercase;
+}
+
+.drinks__tags {
+	display: flex;
+	flex-flow: row wrap;
+	column-gap: 0.8rem;
+	row-gap: 1rem;
+	color: #000;
+}
+.drinks__tag {
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1.2rem;
+}
+.drinks__tag--blue {
+	background-color: rgb(135, 239, 239);
+}
+.drinks__tag--green {
+	background-color: rgb(186, 224, 129);
+}
+.drinks__tag--orange {
+	background-color: rgb(223, 143, 87);
+}
+.drinks__tag--yellow {
+	background-color: rgb(219, 181, 84);
+}
+.drinks__tag--pink {
+	background-color: rgb(191, 103, 235);
+}
+.drinks__tag--red {
+	background-color: rgb(194, 68, 68);
+	color: #fff;
+}
+.drinks__tag--grey {
+	background-color: rgb(191, 191, 191);
+}
+.tag-inactive {
+	background-color: #eee;
+	color: #000;
+}
+
+</style>
+<script>
+  const drinks = [
+	
+	{
+		title: "LITRO",
+		description:
+			" Disfruta de nuestra opción más generosa. Con un litro de nuestra mezcla especial, este coctel es perfecto para compartir con amigos o familiares. Su precio es de $150",
+		url:
+			"https://images.unsplash.com/photo-1513416543495-10c173ed9908?q=80&w=2500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		tags: ["$150", "LITRO"]
+	},
+	
+	{
+		title: "SUPER",
+		description:
+			"Nuestro Coctel Super es la opción ideal para aquellos que buscan una experiencia única sin excederse. Con 20 onzas de nuestra mezcla exclusiva, este coctel es perfecto para una noche especial. Precio: $130.",
+		url:
+			"https://images.unsplash.com/photo-1534778101976-62847782c213?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		tags: ["$130", "SUPER", "¡MAS VENDIDO!"]
+	},
+	{
+		title: "GRANDE",
+		description:
+			"Para aquellos que buscan una experiencia más íntima, nuestro Coctel Grande es la opción perfecta. Con 16 onzas de nuestra mezcla artesanal, este coctel es ideal para una cita o reunión con amigos. Precio: $100.",
+		url:
+			"https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?q=80&w=3168&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		tags: ["$100", "GRANDE"]
+	},
+	
+	
+];
+
+const drinkContainer = document.querySelector(".drinks");
+
+const tagColors = {
+	Cold: "blue",
+	"Non-Alcoholic": "green",
+	Seasonal: "pink",
+	Alcoholic: "red",
+	Caffeinated: "yellow",
+	Hot: "orange"
+};
+
+const drinkSelection = document.querySelector(".tag-selection");
+
+filterDrinks();
+
+drinkContainer.addEventListener("click", function (e) {
+	const tagItem = e.target.closest(".drinks__tag");
+	if (!tagItem) return;
+	const tag = tagItem.textContent;
+	highlightTag(tag);
+	filterDrinks(tag);
+});
+drinkSelection.addEventListener("click", function (e) {
+	const tagItem = e.target.closest(".drinks__tag");
+	if (!tagItem) return;
+	const tag = tagItem.textContent;
+	if (tagItem.classList.contains("tag-inactive")) {
+		highlightTag(tag);
+		filterDrinks(tag);
+	} else {
+		highlightTag();
+		filterDrinks();
+	}
+});
+
+function filterDrinks(tag = "All") {
+	if (tag === "All") return printDrinks(drinks);
+	const filteredDrinks = drinks.filter((drink) => drink.tags.includes(tag));
+	printDrinks(filteredDrinks);
+}
+function highlightTag(tag = "All") {
+	drinkSelection.querySelectorAll("p").forEach((tagSelect) => {
+		if (tagSelect.textContent === tag) tagSelect.classList.remove("tag-inactive");
+		else tagSelect.classList.add("tag-inactive");
+	});
+}
+
+function printDrinks(drinkArray) {
+	const drinksHtml = "";
+	drinkContainer.innerHTML = "";
+
+	drinkArray.forEach((drink) => {
+		let tags = "";
+		drink.tags.forEach((tag) => {
+			const tagHTML = `
+                <p class="drinks_tag drinks_tag--${
+																	tagColors[tag] ? tagColors[tag] : "grey"
+																}">${tag}</p>
+            `;
+			tags = tags + tagHTML;
+		});
+
+		const html = `
+            <div class="drinks__item">
+                <img src="${drink.url}" alt="Drink">
+                <div>
+                    <h3>${drink.title}</h3>
+                    <p>${drink.description}</p>
+                </div>
+                <div class="drinks__tags">
+                    ${tags}
+                </div>
+            </div>
+        `;
+
+		drinkContainer.insertAdjacentHTML("beforeend", html);
+	});
+}
+
+</script>
+<div align="center">
+<section class="portada">
+
+    
+
+    
+ <style>
+.ul {
+  width: fit-content;
+  height: fit-content;
+  background-color: transparent;
+  list-style: none;
+}
+.li {
+  margin-bottom: 0px;
+}
+.button {
+  background-color: transparent;
+  font-family: sans-serif;
+  color: #000;
+  border: none;
+  font-size: 22px;
+  font-weight: 700;
+  padding: 10px 30px;
+  cursor: pointer;
+  position: relative;
+  padding-left: 11px;
+  text-align: lert;
+  transition: 0.1s;
+  z-index: 1;
+}
+
+.p {
+  z-index: 2;
+  position: relative;
+}
+
+.button:hover {
+  color: #fff;
+  text-align: center;
+}
+.button:hover::before {
+  transform: rotate(0deg);
+  width: 100%;
+  height: 40;
+  top: 10;
+  border-radius: 3px;
+  background-color: #000;
+}
+.button::before {
+  content: "";
+  border-radius: 1px;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: black;
+  left: -10px;
+  top: 19px;
+  cursor: pointer;
+  transform: rotate(225deg);
+  transition: 0.3s;
+  z-index: -1;
+}
+
+.button:active::before {
+  background-color: #fff;
+}
+body {
+  background-color: #fff; /* Color negro */
+}
+body {
+  color: #000; /* Color blanco */
+}
+
+h1 {
+    border-top: 0px solid black; /* Cambia el grosor, estilo y color según lo necesites */
+    padding-top: 20px; /* Espacio entre el borde y el texto */
+    margin-top: 20px; /* Espacio encima del h1 (opcional) */
+    text-align: center;
+  opacity: 0; 
+  animation: aparece 10s forwards; 
+  position: center;
+  background-color: transparent;
+}
+
+@keyframes aparece {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+</style>
+</section>
+</div>
+
+</body></html>
